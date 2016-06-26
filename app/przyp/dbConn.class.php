@@ -1,7 +1,7 @@
 <?php
  
 require_once $conf->root_path.'/app/przyp/PrzypCtrl.class.php';
-require_once $conf->root_path.'/lib/Messages.class.php';
+require_once $conf->root_path.'/lib/messages.class.php';
 
 //db connection class using singleton pattern
 class dbConn{
@@ -15,7 +15,7 @@ private function __construct() {
 			$servername = "localhost";
 			$username = "root";
 			$password = "";
-			$dbname = "mydb";
+			$dbname = "myDB";
 			$this->msg = new Messages();
 
 try {

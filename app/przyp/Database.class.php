@@ -1,7 +1,7 @@
 <?php
-	require_once $conf->root_path.'/lib/Messages.class.php';
+	require_once $conf->root_path.'/lib/messages.class.php';
 
-	class dbConn1{
+	class dbConn{
 		//SINGLETON-------------------------------------------------------
 		private static $instance;
 		public static function getInstance(){

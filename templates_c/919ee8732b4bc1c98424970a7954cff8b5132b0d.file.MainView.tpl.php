@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2016-06-07 14:12:42
+<?php /* Smarty version Smarty-3.1.17, created on 2015-06-01 09:39:15
          compiled from "/Applications/MAMP/htdocs/przypomnij.mi-oskar/app/przyp/MainView.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:247802884556b8433eb48b6-47238166%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '919ee8732b4bc1c98424970a7954cff8b5132b0d' => 
     array (
       0 => '/Applications/MAMP/htdocs/przypomnij.mi-oskar/app/przyp/MainView.tpl',
-      1 => 1433792843,
+      1 => 1433144218,
       2 => 'file',
     ),
     '612cc9abcac50220bb78f65e2a455b3478cb11fc' => 
     array (
       0 => '/Applications/MAMP/htdocs/przypomnij.mi-oskar/templates/main.tpl',
-      1 => 1434206956,
+      1 => 1433100826,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'conf' => 0,
     'page_title' => 0,
-    'usr_name' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -85,9 +84,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <ul class="nav navbar-nav navbar-right">
                     
                     <li>
-                        <a class="page-scroll" href="#portfolio" data-toggle="modal" data-target="#myLoginModal" >
-                        <?php echo (($tmp = @$_smarty_tpl->tpl_vars['usr_name']->value)===null||$tmp==='' ? "Zaloguj" : $tmp);?>
-</a>
+                        <a class="page-scroll" href="#portfolio">Zaloguj</a>
                     </li>
 
                     <li>
@@ -117,12 +114,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
         </div>
 
-            
+
         
     </header>
 
 
     
+
+
     <div class="l-content">
 
     <section class="bg-primary" id="about">
@@ -144,6 +143,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <br>
                     <a href="#services" class="btn btn-default btn-xl page-scroll">Więcej!</a>
                 </div>
+
+
 
 
 
@@ -215,11 +216,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
                     <br><a href="#form" class="btn btn-primary btn-xl page-scroll">PRZYPOMNIJ!</a>
 
-                  
-
                 </div>
             </div>
-        </div>
+        </div> -->
 
  
     </section>
@@ -237,10 +236,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   <h2>Wypełnij formularz</h2>
 
 
-
-
     <form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-sql_insert" method="post" data-toggle="modal">
+sql_insert" method="post">
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -257,8 +254,7 @@ sql_insert" method="post" data-toggle="modal">
 
                              <div class="input-group input-group-lg">
                             <span class="input-group-addon" id="sizing-addon1">Data </span>
-                             <input type="date" class="form-control" placeholder="Data wydarzenia" name="data" aria-describedby="sizing-addon1" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->data;?>
-">
+                             <input type="date" class="form-control" placeholder="Data wydarzenia" name="data" aria-describedby="sizing-addon1">
                             </div> <br>
    </div>
 
@@ -267,8 +263,7 @@ sql_insert" method="post" data-toggle="modal">
 
                              <div class="input-group input-group-lg">
                             <span class="input-group-addon" id="sizing-addon1">Czas </span>
-                             <input type="time" class="form-control" placeholder="Data wydarzenia" name="czas" aria-describedby="sizing-addon1" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->czas;?>
-">
+                             <input type="time" class="form-control" placeholder="Data wydarzenia" name="czas" aria-describedby="sizing-addon1">
                             </div> <br>
    </div>
 
@@ -278,8 +273,7 @@ sql_insert" method="post" data-toggle="modal">
 
                              <div class="input-group input-group-lg">
                              <span class="input-group-addon" id="sizing-addon1">  Mail </span>
-                             <input type="mail" class="form-control" placeholder="Adres Mailowy" name="mail" aria-describedby="sizing-addon1" value="<?php echo $_smarty_tpl->tpl_vars['form']->value->mail;?>
-">
+                             <input type="mail" class="form-control" placeholder="Adres Mailowy" name="mail" aria-describedby="sizing-addon1">
                             </div> <br>
     </div>
   
@@ -299,121 +293,23 @@ sql_insert" method="post" data-toggle="modal">
         </div>
     </aside>
 
-                      <style>
-                        .modal-header, h4, .close {
-                            background-color: #f05f40;
-                            color:white !important;
-                            text-align: center;
-                            font-size: 30px;
-                            font-color: #000  ;
-                        }
-                        .modal-content {
-                          background-color: #fff;
-                          color:black;
-                          }
-                        .modal-footer {
-                            background-color: #f9f9f9;
-                        }
-                      </style>
 
-
-
-
-                       <div class="modal fade" id="myLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
-                      <form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-sql_login" method="post" data-toggle="modal">
-
-                           <div class="modal-dialog bgColorBlack">
-                          <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel" >Zaloguj się!</h4>
-                            </div>
-                            <div class="modal-body">
-                            
-                             <h2 class="section-heading" .text-muted>Wprowadź dane</h2>
-
-                            <div class="input-group input-group-lg">
-                             <span class="input-group-addon" id="sizing-addon1">  Mail </span>
-                             <input type="mail" class="form-control" placeholder="Adres Mailowy" name="mailL" aria-describedby="sizing-addon1" value = "<?php echo $_smarty_tpl->tpl_vars['form']->value->mailL;?>
-">
-                            </div> 
-                            
-
-                            <div class="input-group input-group-lg">
-                             <span class="input-group-addon" id="sizing-addon1"> Pass </span>
-                             <input type="password" class="form-control" placeholder="Hasło" name="hasloL" aria-describedby="sizing-addon1" value = "<?php echo $_smarty_tpl->tpl_vars['form']->value->hasloL;?>
-">
-                            </div> 
-
-
-                          </div>
-                          <div class="modal-footer">
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#rejestracjaModal" >Zarejestruj</button>
-
-                            <button type="submit"  class="btn btn-primary">Zaloguj</button>
-                    </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-
-
-
-
-
-                     <!-- Modal 2 -->
-
-
-                    <div class="modal fade" id="rejestracjaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <!-- Button trigger modal -->
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
-
-
-                      <h2> Podaj dane do rejestracji </h2>
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Zarejestruj się!</h4>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                           </div>
                           <div class="modal-body">
-
-
-
-                            <form action="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
-sql_rejestracja" method="post">
-
-                            <div class="input-group input-group-lg">
-                             <span class="input-group-addon" id="sizing-addon1">  Imie </span>
-                             <input type="text" class="form-control" placeholder="Imie" name="imieR" aria-describedby="sizing-addon1" value = "<?php echo $_smarty_tpl->tpl_vars['form']->value->imieR;?>
-">
-                            </div> 
-
-
-                           <div class="input-group input-group-lg">
-                             <span class="input-group-addon" id="sizing-addon1">  Mail </span>
-                             <input type="text" class="form-control" placeholder="Adres Mailowy" name="mailR" aria-describedby="sizing-addon1" value = "<?php echo $_smarty_tpl->tpl_vars['form']->value->mailR;?>
-">
-                            </div> 
-
-                            
-
-                            <div class="input-group input-group-lg">
-                             <span class="input-group-addon" id="sizing-addon1"> Pass </span>
-                             <input type="password" class="form-control" placeholder="Hasło" name="hasloR" aria-describedby="sizing-addon1" value = "<?php echo $_smarty_tpl->tpl_vars['form']->value->hasloR;?>
-">
-                            </div> 
-
-
+                            ...
                           </div>
                           <div class="modal-footer">
-                            <button type="submit"  class="btn btn-primary">Zarejestruj</button>
-                            </form>
-
+                            <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                            <button type="button"  class="btn btn-primary">Save changes</button>
                           </div>
                         </div>
                       </div>
@@ -426,9 +322,6 @@ sql_rejestracja" method="post">
     <section id="contact">
        
                 
-
-
-
  <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">

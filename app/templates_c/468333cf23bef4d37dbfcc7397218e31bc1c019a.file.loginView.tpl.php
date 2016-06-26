@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-13 17:23:48
+<?php /* Smarty version Smarty-3.1.17, created on 2016-06-26 20:12:43
          compiled from "C:\xampp\htdocs\przypomnij.mi-oskar\app\przyp\loginView.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:21466557472f278ea40-31128051%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8c1497968b5e19c3024816ff442e8741364cbfed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\przypomnij.mi-oskar\\templates\\main.tpl',
-      1 => 1434206956,
+      1 => 1466963260,
       2 => 'file',
     ),
   ),
@@ -222,8 +222,6 @@ sql_login" method="post" data-toggle="modal">
     </div>
 
 
-
-
     <section id="services">
         
 
@@ -259,9 +257,7 @@ sql_login" method="post" data-toggle="modal">
             </div>
         </div>
  
-
-
-                    
+                 
 
     </section>
 

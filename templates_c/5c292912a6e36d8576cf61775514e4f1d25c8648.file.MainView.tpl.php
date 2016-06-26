@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-13 16:49:42
+<?php /* Smarty version Smarty-3.1.17, created on 2016-06-26 20:04:43
          compiled from "C:\xampp\htdocs\przypomnij.mi-oskar\app\przyp\MainView.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:252335570a41ad53458-69959280%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8c1497968b5e19c3024816ff442e8741364cbfed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\przypomnij.mi-oskar\\templates\\main.tpl',
-      1 => 1434206956,
+      1 => 1466963260,
       2 => 'file',
     ),
   ),
@@ -153,8 +153,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     </div>
-
-
 
 
     <section id="services">
@@ -447,9 +445,7 @@ sql_rejestracja" method="post">
             </div>
         </div>
  
-
-
-                    
+                 
 
     </section>
 

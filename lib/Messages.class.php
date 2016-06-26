@@ -1,7 +1,8 @@
 <?php
 class Messages {
 
-	private $errors = array ();
+
+		private $errors = array ();
 	private $infos = array ();
 	private $num = 0;
 

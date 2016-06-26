@@ -15,25 +15,23 @@ else $action = ' ';
 
 //2. wykonanie akcji
 switch ($action) {
-	default : // 'calcView'
-	    // załaduj definicję kontrolera
+	default : // 
+	    // definicja konolera
 		include_once $conf->root_path.'/app/przyp/PrzypCtrl.class.php';
-		// utwórz obiekt i uzyj
+		// tworzenie obiektu
 		$ctrl = new PrzypCtrl ();
 		$ctrl->generateView ();
 	break;
 	case 'sql_insert' :
-		// załaduj definicję kontrolera
+		
 		include_once $conf->root_path.'/app/przyp/PrzypCtrl.class.php';
-		// utwórz obiekt i uzyj
+	
 		$ctrl = new PrzypCtrl ();
-		//$ctrl->process();
 		$ctrl->sql_insert ();
 	break;
 	case 'sql_rejestracja' :
 		
 		include_once $conf->root_path.'/app/przyp/PrzypCtrl.class.php';
-		// utwórz obiekt i uzyj
 		$ctrl = new PrzypCtrl ();
 		$ctrl->sql_rejestracja ();
 
@@ -52,8 +50,4 @@ switch ($action) {
 		$ctrl = new PrzypCtrl ();
 		$ctrl->sql_update ();
 	break;
-
-
-	
-
 }

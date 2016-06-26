@@ -95,8 +95,6 @@
     </div>
 
 
-
-
     <section id="services">
         
 
@@ -113,9 +111,7 @@
     <section id="contact">
        
                 {block name=content4}  {/block} 
-
-
-                    
+                 
 
     </section>
 

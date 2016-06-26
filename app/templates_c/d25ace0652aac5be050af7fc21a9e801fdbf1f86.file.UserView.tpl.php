@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2015-06-14 21:49:02
+<?php /* Smarty version Smarty-3.1.17, created on 2016-06-26 20:26:06
          compiled from "C:\xampp\htdocs\przypomnij.mi-oskar\app\przyp\UserView.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:134735575f61071e6e1-60108994%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd25ace0652aac5be050af7fc21a9e801fdbf1f86' => 
     array (
       0 => 'C:\\xampp\\htdocs\\przypomnij.mi-oskar\\app\\przyp\\UserView.tpl',
-      1 => 1434311234,
+      1 => 1464806250,
       2 => 'file',
     ),
     '8c1497968b5e19c3024816ff442e8741364cbfed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\przypomnij.mi-oskar\\templates\\main.tpl',
-      1 => 1434206956,
+      1 => 1466963260,
       2 => 'file',
     ),
   ),
@@ -185,8 +185,6 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
 
 
     </div>
-
-
 
 
     <section id="services">
@@ -373,7 +371,7 @@ sql_update" method="post" data-toggle="modal">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Skontaktuj się z nami!</h2>
                     <hr class="primary">
-                    <p>Jestesmy legalnie działającą firmą, możesz skontaktować się z naszym działem obsługi pod poniższym numerem telefonu bądź mailem</p>
+                    <p>Jesteśmy legalnie działającą firmą, możesz skontaktować się z naszym działem obsługi pod poniższym numerem telefonu bądź mailem</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
@@ -386,9 +384,7 @@ sql_update" method="post" data-toggle="modal">
             </div>
         </div>
  
-
-
-                    
+                 
 
     </section>
 

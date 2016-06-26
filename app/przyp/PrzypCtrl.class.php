@@ -62,6 +62,8 @@ class PrzypCtrl {
 			
 			$mail = $this->mail;
 
+			
+
 			$db = dbConn::getConnection();
 
 
@@ -174,7 +176,7 @@ class PrzypCtrl {
 		    	
 		    	//blad polaczenia
 		    	if (!$db) { 
-				   $this->msg->addError('Błąd połączenia z bazą danych '); 
+				   $this->msg->addError('Błąd połączenia z bazą danych :( '); 
 					$this->generateErrorView();
 					die();
 		    	}
@@ -225,6 +227,7 @@ class PrzypCtrl {
 		             }
 		             else
 		             {
+		             	
 		             	$this->msg->addError('Błąd logowania '); 
 		               $this->generateErrorView();
 
