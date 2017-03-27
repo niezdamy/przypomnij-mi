@@ -28,6 +28,9 @@ switch ($action) {
 	
 		$ctrl = new PrzypCtrl ();
 		$ctrl->sql_insert ();
+
+		//$ctrl->sql_login();
+
 	break;
 	case 'sql_rejestracja' :
 		
